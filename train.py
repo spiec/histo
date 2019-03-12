@@ -9,7 +9,7 @@
 """Binary image classification for Histopathologic Cancer Detection
 (https://www.kaggle.com/c/histopathologic-cancer-detection)
 
-Example usage:
+Usage:
     python train.py --epochs=10
 """
 
