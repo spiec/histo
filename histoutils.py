@@ -196,14 +196,6 @@ def plot_precision_recall(y_true, y_pred, label="", return_preds=False, ax=None)
 
     ax.set_title("Precision-recall curve (Avg precision: {0:.2f})".format(avg_precision))
 
-
-
-
-# ----------------------------------------------------------------------
-#def load_model(filename):
-#    print("Loading model {}".format(filename))
-#    return keras.models.load_model(filename)
-
 # ----------------------------------------------------------------------
 def inference(model, data_generator):
     data = []
@@ -218,3 +210,8 @@ def inference(model, data_generator):
     output_file = config.submission
     df = pd.DataFrame(data, columns=["id", "label"])
     df.to_csv(output_file, index=False)
+    
+# ----------------------------------------------------------------------
+#def load_model(filename):
+#    print("Loading model {}".format(filename))
+#    return keras.models.load_model(filename)   
